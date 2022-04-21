@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float_vs_Flex</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="sector_1 clearfix">
+        <div class="sector_1_item float__left">item_1</div>
+        <div class="sector_1_item float__right">item_2</div>
+      </div>
+
+      <div class="sector_1 sector_2">
+        <div class="sector_1_item">item_1</div>
+        <div class="float__right clearfix">
+          <div class="sector_1_item sector_2_item">item_2</div>
+          <div class="sector_1_item sector_2_item">item_3</div>
+          <div class="sector_1_item sector_2_item">item_4</div>
+          <div class="sector_1_item sector_2_item">item_5</div>
+        </div>
+      </div>
+
+      <div class="sector_1 clearfix">
+        <div class="inline__item float__left">
+          <div class="sector_1_item">item_1</div>
+          <div class="sector_1_item">item_2</div>
+        </div>
+        <div class="inline__item float__right">
+          <div class="sector_1_item">item_3</div>
+          <div class="sector_1_item">item_4</div>
+        </div>
+      </div>
+
+      <div class="sector_1 clearfix">
+        <div class=" sector_4">
+          <div class="sector_1_item big_item float__left clearfix">item_1</div>
+            <div class="sector_1_item">item_2</div>
+            <div class="sector_1_item">item_3</div>
+        </div>
+      </div>
+
+      <div class="sector_1 clearfix">
+        <div class="sector_4 float__right clearfix">
+          <div class="sector_1_item big_item float__left clearfix">item_1</div>
+          <div class="sector_1_item">item_2</div>
+          <div class="sector_1_item">item_3</div>
+        </div>
+      </div>
+    </div><!--MAIN-->
+  </body>
+</html>
